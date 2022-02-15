@@ -17,7 +17,22 @@ function handleButtonClick(e) {
 	document.getElementById("vLink21").setAttribute("href", CSSvalidLinkStr);
 }
 
- 
+function handleButtonClick(e) {
+	var textInput = document.getElementById("songTextInput");
+	var songName = textInput.value;
+
+	if (songName == "") {
+		alert("Please enter a song");
+	}
+	else {
+		var li = document.createElement("li");
+		li.innerHTML = songName;
+		var ul = documet.getElementById("playlist");
+		ul.appendChild(li);
+		save(songName);
+		textInput.value = "";
+	}
+}
 
 /*
 	var textInput = document.getElementById("songTextInput");
