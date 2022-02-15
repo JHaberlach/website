@@ -1,5 +1,4 @@
 /* playlist.js */
-
 window.onload = init;
 
 function init() {
@@ -7,9 +6,20 @@ function init() {
 	button.onclick = handleButtonClick;
 
 	loadPlaylist();
+	addValidation();
 }
 
 function handleButtonClick(e) {
+	var loc = window.location.href;
+	var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri='+ loc;
+	var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +loc + '?profile=css3';
+	document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+	document.getElementById("vLink21").setAttribute("href", CSSvalidLinkStr);
+}
+
+ 
+
+/*
 	var textInput = document.getElementById("songTextInput");
 	var songName = textInput.value;
 	//alert("Adding " + songName);
@@ -27,4 +37,4 @@ function handleButtonClick(e) {
 		// for Ready Bake
 		save(songName);
 	}
-}
+*/
