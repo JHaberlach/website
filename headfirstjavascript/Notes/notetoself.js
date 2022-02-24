@@ -10,6 +10,13 @@ function init() {
     }
 }
 
+function createSticky() {
+	var value = document.getElementById("note_text").value;
+	var key = "sticky_" + localStorage.length;
+	localStorage.setItem(key, value);
+	
+	addStickyToDOM(value);
+}
 function addStickyToDOM(value) {
     var stickies = document.getElementById("stickies");
     var sticky = document.createElement("li");
