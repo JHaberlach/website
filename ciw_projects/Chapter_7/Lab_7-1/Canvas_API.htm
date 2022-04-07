@@ -8,7 +8,7 @@
 #canvas {
   position: absolute;
   align: center;=
-  right: 40%;
+  right: 60%;
   border: 2px solid black;
 }
 
@@ -36,8 +36,8 @@
 		    ctx.moveTo(65,65);
 		    ctx.arc(60,65,8,0,Math.PI*2,true);  // Left eye
 		    ctx.moveTo(100,65);
-		    ctx.arc(60,65,8,0,Math.PI*2,true);  // Right eye
-		    ctx.stroke(100,55);
+		    ctx.arc(90,65,5,0,Math.PI*2,true);  // Right eye
+		    ctx.stroke();
 		  }
 	}
 	window.onload = draw;
