@@ -5,7 +5,17 @@
 <meta name="Description" content="Sample Website for learning HTML5 and CSS3" />
 <link rel="stylesheet" href="css/uCorp.css" />
 <title>uCorp</title>
-<script></script>
+<style>
+    h1, footer {
+    text-align: center;
+}
+footer>a, footer>a:visited {
+    text-decoration: none;
+    color: #555;
+}
+</style>
+
+<script>
 function init() {
     var loc = window.location.href;
     var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
