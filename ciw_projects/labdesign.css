@@ -96,3 +96,10 @@ a:hover {
   color: rgb(120, 0, 133);
 
 }
+h1, footer {
+  text-align: center;
+}
+footer>a, footer>a:visited {
+  text-decoration: none;
+  color: #555;
+}
