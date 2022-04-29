@@ -72,3 +72,11 @@ border-radius: 5px;
 text-decoration: none;
 box-shadow: 5px 5px 5px #888888;
 }
+
+h1, footer {
+    text-align: center;
+}
+footer>a, footer>a:visited {
+    text-decoration: none;
+    color: #555;
+}
