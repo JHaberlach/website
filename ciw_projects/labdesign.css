@@ -58,7 +58,7 @@ footer {
   color: #c300ff;
 }
 
-*/
+
 
 body {
   background-color: rgb(199, 249, 252);
@@ -102,4 +102,40 @@ h1, footer {
 footer>a, footer>a:visited {
   text-decoration: none;
   color: #555;
+}
+*/
+body {
+  background-color:  #152e2e;
+}
+
+h1 {
+  text-align: center;
+  color: #F2F2F2;
+}
+h3 {
+  text-align: center;
+  color: #3E8C7E;
+}
+h2 {
+  text-align: center;
+  color: #4BBF9E;
+}
+p {
+  text-align: center;
+  font-weight: bold;
+  color: #1c6be1;
+}
+
+a:link {
+  color: #1c6be1;
+}
+a:visited {
+  color: #1c6be1;
+}
+a:hover {
+  border-bottom: #55D9B3;
+  text-decoration-color: #55D9B3;
+  text-decoration-style: initial;
+  text-emphasis-color: #55D9B3;
+  color: #55D9B3;
 }
